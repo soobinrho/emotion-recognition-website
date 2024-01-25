@@ -32,7 +32,7 @@ model.save("final_model.keras")
 - Converted the model into [TF.js layers format](https://www.tensorflow.org/js/tutorials/conversion/import_keras).
 This required installation of a pyton `tensorflowjs` package.
 Do not install this in the same environment as the model's because
-conflicts can occur, which tends to break the entire training process.
+conflicts can occur, which tend to break the entire training process.
 
 ```bash
 conda deactivate
