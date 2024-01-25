@@ -1,5 +1,7 @@
+"use server"
+
 import { NextRequest, NextResponse } from 'next/server';
-import * as tf from '@tensorflow/tfjs'
+import { loadGraphModel, loadLayersModel } from '@tensorflow/tfjs';
 
 export async function GET(request: NextRequest) {
   const searchQuery = request.nextUrl.searchParams;
@@ -8,8 +10,17 @@ export async function GET(request: NextRequest) {
   const yearMonth = searchQuery.get('year-month') ?? '';
 
   try {
+
+  const model = await loadGraphModel('http://127.0.0.1:3000/model/model.json')
+  console.log(model.predict())
+  } catch (err: any) {
+    console.log(err)
+    console.log("NOPE")
+  }
+
+  try {
     return NextResponse.json("TEST");
-  } catch (err) {
+  } catch (err: any) {
       return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }
