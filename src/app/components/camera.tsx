@@ -27,7 +27,7 @@ export default function Camera() {
     }
 
     return (
-        <div className="flex flex-col gap-6 text-center">
+        <div className="relative flex flex-col gap-6 text-center">
             <Webcam className="border rounded-lg drop-shadow-2xl" audio={false} ref={webcamRef} screenshotFormat="image/jpeg" />
             <div>
                 <button className="rounded-md border border-cyan-200 bg-white px-3 py-1 hover:bg-cyan-50 hover:shadow-lg active:bg-cyan-100/70 drop-shadow-lg" onClick={capture}>Get predictions</button>

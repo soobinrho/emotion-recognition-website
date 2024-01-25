@@ -12,7 +12,7 @@ export default function Header() {
                         2024-01-25 Final Project Demo
                     </div>
                 </Link>
-                <div className='ml-3 drop-shadow-md'>Emotion Detection</div>
+                <div className='invisible sm:visible ml-3 drop-shadow-md'>Emotion Detection</div>
             </div>
         </>
     );
