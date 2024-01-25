@@ -41,6 +41,9 @@ dependencies:
   react-papaparse:
     specifier: ^4.4.0
     version: 4.4.0
+  react-webcam:
+    specifier: ^7.2.0
+    version: 7.2.0(react-dom@18.2.0)(react@18.2.0)
   tailwindcss:
     specifier: 3.4.1
     version: 3.4.1(ts-node@10.9.2)
@@ -4353,6 +4356,16 @@ packages:
     dependencies:
       '@types/papaparse': 5.3.14
       papaparse: 5.4.1
+    dev: false
+
+  /react-webcam@7.2.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-xkrzYPqa1ag2DP+2Q/kLKBmCIfEx49bVdgCCCcZf88oF+0NPEbkwYk3/s/C7Zy0mhM8k+hpdNkBLzxg8H0aWcg==}
+    peerDependencies:
+      react: '>=16.2.0'
+      react-dom: '>=16.2.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react@18.2.0:
