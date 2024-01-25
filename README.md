@@ -1,4 +1,27 @@
+## How to Run
+
+```bash
+# Install pnpm.
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+nvm install node
+npm install -g pnpm
+pnpm setup
+
+# Clone this repository.
+git clone https://github.com/soobinrho/emotion-recognition-website.git
+
+# Install dependencies.
+cd emotion-recognition-website
+pnpm install
+
+# Run a development server.
+pnpm dev
+```
+
 ## Development Logs
+
+> [!WARNING]
+> Work in progress.  Model integration underway.
 
 - Trained the model on Jupyter Lab.
 
