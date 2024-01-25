@@ -10,9 +10,8 @@ export async function GET(request: NextRequest) {
   const yearMonth = searchQuery.get('year-month') ?? '';
 
   try {
-
-  const model = await loadGraphModel('http://127.0.0.1:3000/model/model.json')
-  console.log(model.predict())
+    const model = await loadGraphModel('http://127.0.0.1:3000/model/model.json')
+    // console.log(model.predict())
   } catch (err: any) {
     console.log(err)
     console.log("NOPE")
