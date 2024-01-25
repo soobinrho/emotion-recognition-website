@@ -8,11 +8,11 @@ export default function Header() {
         <>
             <div className='absolute left-0 top-0 m-5 mt-6 flex flex-row text-base'>
                 <Link href='/'>
-                    <div className='font-black drop-shadow-sm hover:text-slate-700 hover:drop-shadow-md active:text-slate-500'>
-                        Final Project
+                    <div className='font-black hover:text-slate-700 drop-shadow-md active:text-slate-500'>
+                        2024-01-25 Final Project Demo
                     </div>
                 </Link>
-                <div className='ml-3 hover:drop-shadow-md'>Emotion Detection</div>
+                <div className='ml-3 drop-shadow-md'>Emotion Detection</div>
             </div>
         </>
     );
