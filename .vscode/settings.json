@@ -1,0 +1,14 @@
+{
+  "cSpell.words": [
+    "Bliley",
+    "extralight",
+    "glbra",
+    "Gramm",
+    "hahaha",
+    "todos",
+    "tsdoc"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.validate": ["typescript"]
+}
